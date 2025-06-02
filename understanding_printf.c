@@ -13,6 +13,6 @@ int main()
     printf("Double:%f\n", d);
     printf("Character:%c\n", c);
     printf("String:%s\n", str);
-
+    
     return 0;
 }
