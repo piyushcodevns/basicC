@@ -7,4 +7,5 @@ int main()
     printf("\n\n\n");
     printf("%-5d%-5d%-5d\n", a, b, c);
     printf("%-5d%-5d%-5d\n", c, d, e);
+    
 }
