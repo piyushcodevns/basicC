@@ -2,16 +2,16 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
+            "label": "Build C Program",
             "type": "shell",
-            "command": "g++",
+            "command": "gcc",
             "args": [
-                "-g",
-                "your_program.cpp",
+                "${file}",
                 "-o",
-                "your_program.exe"
+                "${fileDirname}/${fileBasenameNoExtension}.exe"
             ],
-            "group": "build"
+            "group": "build",
+            "problemMatcher": []
         },
         {
             "type": "cppbuild",
