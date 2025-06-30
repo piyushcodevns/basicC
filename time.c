@@ -1,14 +1,19 @@
 #include <stdio.h>
 
 int main() {
-    int hour, minute, totalMinutes;
+    int totalMinutes, hour, minute;
 
-    printf("Enter time in HH MM format: ");
-    scanf("%d %d", &hour, &minute);
+    printf("Enter total minutes: ");
+    scanf("%d", &totalMinutes);
 
-    totalMinutes = (hour * 60) + minute;
+    if (totalMinutes < 0) {
+        printf("Invalid input. Minutes cannot be negative.\n");
+    }
 
-    printf("Total minutes since 12:00 AM = %d minutes\n", totalMinutes);
+    hour = totalMinutes / 60;
+    minute = totalMinutes % 60;
+
+    printf("%d hour and %d minute\n", hour, minute);
 
     return 0;
 }
