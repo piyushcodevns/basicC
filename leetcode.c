@@ -1,15 +1,17 @@
 #include <stdio.h>
-
 int main()
 {
-    int n=10,i;
-    int num;
-    int j;
-
-    for(i=1;i<=n;i++)
-
-    {
-        printf("%d ",i);
+    for (;;) {
+        printf("Infinite-loop\n");
     }
+
+    while (1) {
+        printf("Infinite-loop\n");
+    }
+
+    do {
+        printf("Infinite-loop\n");
+    } while (1);
+
     return 0;
 }
