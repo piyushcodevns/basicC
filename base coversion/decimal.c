@@ -2,20 +2,16 @@
 
 int main()
 {
-    int n = 123;
-    int base = 8;
-    int remainder[20];
-    int i = 0;
+    int n = 110;
+    int decimal = 0, rem;
+    int base = 2;
+    int m = 1;
     while (n > 0)
     {
-        remainder[i++] = n % base;
-        n = n / base;
-        
+        rem = n % 10;
+        decimal += rem * m;
+        n = n / 10;
+        m = m * base;
     }
-
-    for (int j = i-1 ; j >= 0; j--)
-    {
-        printf("%d", remainder[j]);
-    }
-    return 0;
+    printf("%d", decimal);
 }
