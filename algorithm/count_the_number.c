@@ -3,7 +3,8 @@
 int main()
 {
     int num, count = 0;
-    printf("Enter the Integer: ");
+
+    printf("Enter the value: ");
     scanf("%d", &num);
 
     if (num == 0)
@@ -18,6 +19,7 @@ int main()
             count++;
         }
     }
-    printf("Digit=%d", count);
+    printf("Number of digits: %d\n", count);
+
     return 0;
 }
