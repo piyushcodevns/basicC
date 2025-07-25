@@ -1,11 +1,10 @@
-// Swap their values without using any extra variable
 #include <stdio.h>
 
 int main()
 {
     int a, b;
 
-    printf("Enter the value: ");
+    printf("Enter the values: ");
     scanf("%d %d", &a, &b);
 
     a = a + b;
