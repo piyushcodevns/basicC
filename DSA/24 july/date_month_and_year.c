@@ -1,37 +1,38 @@
-// Print whether it is a leap year or not
+// Validate a Given Date (dd-mm-yyyy)
+
 #include <stdio.h>
 
 int main()
 {
     int month, year;
-    printf("Enter the month(1-12): ");
+
+    printf("Enter the Month: ");
     scanf("%d", &month);
+
     printf("Enter the Year: ");
     scanf("%d", &year);
 
     if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
     {
         printf("Days 31");
+        return 0;
     }
-    else if (month == 4 || month == 6 || month == 9 || month == 11)
+    if (month == 4 || month == 6 || month == 9 || month == 11)
     {
         printf("Days 30");
+        return 0;
     }
-    else if (month == 2)
+    if (month == 2)
     {
         if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
         {
             printf("Leap Year\n");
-            printf("days 29");
+            printf("Days=29");
         }
         else
         {
-            printf("days 28");
+            printf("Days=28");
         }
-    }
-    else
-    {
-        printf("Invalid Month");
     }
     return 0;
 }

@@ -1,10 +1,12 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int i;
     int table = 2;
 
-    for(i = 1; i <= 10; i++) {
+    for (i = 1; i <= 10; i++)
+    {
         printf("%d * %d = %d\n", table, i, table * i);
     }
 

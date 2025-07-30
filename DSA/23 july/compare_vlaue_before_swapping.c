@@ -1,11 +1,10 @@
+// Compare Values Before Swapping
 #include <stdio.h>
 
 int main()
 {
-    int a, b;
+    int a = 20, b = 30;
 
-    printf("Enter the Number: ");
-    scanf("%d %d", &a, &b);
     if (a < b)
     {
         a = a + b;
