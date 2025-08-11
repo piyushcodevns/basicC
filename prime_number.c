@@ -5,7 +5,7 @@ int main()
 {
     int num = 23, limit, i;
 
-    limit = (int)sqrt(num);
+    limit = sqrt(num);
 
     for (i = 2; i <= limit; i++)
     {
