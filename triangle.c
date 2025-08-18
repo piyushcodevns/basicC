@@ -1,43 +1,4 @@
 
-// #include <stdio.h>
-
-// int main()
-// {
-//     int a, b, c, count = 0, t;
-//     printf("Enter Three side of triangle: ");
-//     scanf("%d %d %d", &a, &b, &c);
-//     if (a > c)
-//     {
-//         t = a;
-//         a = c;
-//         c = t;
-//     }
-//     if (b > c)
-//     {
-//         t = b;
-//         b = c;
-//         c = t;
-//     }
-//     if (a * a + b * b == c * c)
-//         printf("Right Angled Triangle\n");
-//     if (a == b)
-//         count++;
-//     if (a == c)
-//         count++;
-//     if (b == c)
-//         count++;
-//     if (count == 3)
-//         printf("Equilateral triangle");
-//     else if (count == 1)
-
-//         printf("Isosceles triangle");
-//     else
-
-//         printf("Scalene triangle");
-
-//     return 0;
-// }
-
 #include <stdio.h>
 int main()
 {

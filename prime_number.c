@@ -1,20 +1,24 @@
 #include <stdio.h>
-#include <math.h>
 
 int main()
 {
-    int num = 23, limit, i;
+    int num, i, flag = 0;
 
-    limit = sqrt(num);
+    printf("enter the number: ");
+    scanf("%d", &num);
 
-    for (i = 2; i <= limit; i++)
+    for (i = 2; i < num; i++)
     {
         if (num % i == 0)
         {
-            printf("Not prime number\n");
-            return 0;
+            flag = 1;
+            break;
         }
     }
-    printf("Prime Number\n");
+    if (flag == 0)
+        printf("not prime number");
+    else
+        printf("prime number");
+
     return 0;
 }
